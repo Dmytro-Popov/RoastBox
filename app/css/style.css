@@ -9,7 +9,7 @@ light color: #F6EBDD
 accent color: #c47a44   for links, hover...*/
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #3b2418;
@@ -20,7 +20,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-weight: 500;
 }
 
@@ -79,8 +79,57 @@ button {
   color: #3b2418;
 }
 
-.kunden {
-  text-align: center;
+.header {
+  background-color: #fab525;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 20px;
+}
+
+.nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav-list {
+  display: flex;
+}
+
+.nav-list li:hover {
+  text-decoration: underline #3b2418;
+}
+
+.logo img {
+  max-width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+ .kunden { 
+text-align: center;
 }
 
 .kunden-liste {
