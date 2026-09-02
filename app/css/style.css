@@ -35,12 +35,18 @@ h3,
   margin-bottom: 15px;
 }
 
+h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-ul {
+ul,
+ol {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -124,15 +130,7 @@ button {
   display: block;
 }
 
-
-
 /* Kunden */
-
-/* .kunden {
-  
-  text-align: center;
-  background-color: #faf5ed;
-} */
 
 .kunden-liste {
   display: flex;
@@ -143,7 +141,7 @@ button {
 }
 
 .kunden p {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .kunden img {
@@ -151,25 +149,40 @@ button {
 }
 
 /* Video Bereich */
+
 .video-bereich h3 {
-    margin-bottom: 54px;
+  margin-bottom: 54px;
 }
 
-/* .video-bereich button {
-    align-content: center;
-    } */
-    
-    .video-wrapper {
-        margin: 0 auto;
-        aspect-ratio: 16/9;
-        overflow: hidden;
-        max-width: 715px;
-    }
-    
-    .video-wrapper iframe {
-        width: 100%;
-    height: 100%;
+.video-wrapper {
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  max-width: 715px;
+}
 
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Schritte */
+
+.schritte-liste {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 196px;
+}
+
+.schritte p {
+  margin-bottom: 54px;
+}
+
+.schritte-liste figure {
+  text-align: center;
+  max-width: 300px;
 }
 
 /* Vorteile */
@@ -242,6 +255,12 @@ button {
   margin: 1rem 3rem 3rem 3rem;
 }
 
+@media (max-width: 1332px) {
+  .schritte-liste {
+    gap: 50px;
+  }
+}
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -254,4 +273,13 @@ button {
     justify-content: center;
     gap: 15px;
   }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
 }
