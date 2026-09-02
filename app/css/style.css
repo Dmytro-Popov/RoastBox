@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* dark color: #3B2418
+light color: #F6EBDD
+accent color: #c47a44   for links, hover...*/
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #3b2418;
+  background-color: #faf5ed;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 54px 20px;
+  background-color: #f6ebdd;
+}
+
+.section-dark {
+  background-color: #3b2418;
+  color: #f6ebdd;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  width: 195px;
+  padding: 13px 31px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #3b2418;
+  color: #f6ebdd;
+}
+
+.btn-secondary {
+  background-color: #c47a44;
+  color: #3b2418;
+}
