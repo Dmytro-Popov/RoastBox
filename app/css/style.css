@@ -9,7 +9,7 @@ light color: #F6EBDD
 accent color: #c47a44   for links, hover...*/
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #3b2418;
@@ -20,7 +20,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: "Fraunces", Georgia, serif;
   font-weight: 500;
 }
 
@@ -80,14 +80,10 @@ button {
   color: #3b2418;
 }
 
-.center { text-align: center; }
-
-
-/* Clients */
-
-.clients {
+.center {
   text-align: center;
 }
+
 .header {
   background-color: #fab525;
 }
@@ -137,8 +133,12 @@ button {
     gap: 15px;
   }
 }
- .kunden { 
-text-align: center;
+
+/* Kunden */
+
+.kunden {
+  background-color: #faf5ed;
+  text-align: center;
 }
 
 .kunden-liste {
@@ -153,7 +153,6 @@ text-align: center;
   width: 100%;
 }
 
-
 /* Vorteile */
 
 .vorteile ul {
@@ -162,16 +161,14 @@ text-align: center;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;  
+  gap: 3rem;
 }
 
 .vorteile ul li {
   text-align: center;
-
 }
 
-
-/* Vorteile */
+/* Preise */
 
 .price {
   background-color: #e8b57b;
@@ -181,13 +178,13 @@ text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
-  margin-top: 3rem;  
+  margin-top: 3rem;
 }
 
 .price .price-container article {
   margin: 0;
   padding: 0;
-  border: 1px solid #3B2418;
+  border: 1px solid #3b2418;
 }
 
 .price .price-container article .cover {
@@ -198,13 +195,13 @@ text-align: center;
 }
 
 .price .price-container article .cover.start {
-  background-image: url('../img/price/start.png');
+  background-image: url("../img/price/start.png");
 }
 .price .price-container article .cover.premium {
-  background-image: url('../img/price/premium.png');
+  background-image: url("../img/price/premium.png");
 }
 .price .price-container article .cover.business {
-  background-image: url('../img/price/business.png');
+  background-image: url("../img/price/business.png");
 }
 
 .price .price-container article h3 {
