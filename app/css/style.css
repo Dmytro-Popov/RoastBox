@@ -127,4 +127,18 @@ button {
     justify-content: center;
     gap: 15px;
   }
+.clients {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.clients img {
+  width: 100%;
 }
