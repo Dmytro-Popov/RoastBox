@@ -108,6 +108,13 @@ button {
   text-decoration: underline #3b2418;
 }
 
+.logo img {
+  max-width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block;
+}
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
