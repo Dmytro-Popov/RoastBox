@@ -30,8 +30,8 @@ h2 {
 }
 
 h3 {
-    font-size: 30px;
-    margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 a {
@@ -77,4 +77,20 @@ button {
 .btn-secondary {
   background-color: #c47a44;
   color: #3b2418;
+}
+
+.clients {
+  text-align: center;
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.clients img {
+  width: 100%;
 }
