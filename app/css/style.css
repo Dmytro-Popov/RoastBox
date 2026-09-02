@@ -56,6 +56,10 @@ section {
   color: #f6ebdd;
 }
 
+.section-hell {
+  background-color: #faf5ed;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -120,26 +124,15 @@ button {
   display: block;
 }
 
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
 
-  .nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-}
 
 /* Kunden */
 
-.kunden {
-  background-color: #faf5ed;
+/* .kunden {
+  
   text-align: center;
-}
+  background-color: #faf5ed;
+} */
 
 .kunden-liste {
   display: flex;
@@ -149,8 +142,34 @@ button {
   gap: 3rem;
 }
 
+.kunden p {
+    margin-bottom: 3rem;
+}
+
 .kunden img {
   width: 100%;
+}
+
+/* Video Bereich */
+.video-bereich h3 {
+    margin-bottom: 54px;
+}
+
+/* .video-bereich button {
+    align-content: center;
+    } */
+    
+    .video-wrapper {
+        margin: 0 auto;
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        max-width: 715px;
+    }
+    
+    .video-wrapper iframe {
+        width: 100%;
+    height: 100%;
+
 }
 
 /* Vorteile */
@@ -170,9 +189,9 @@ button {
 
 /* Preise */
 
-.price {
+/* .price {
   background-color: #e8b57b;
-}
+} */
 
 .price .price-container {
   display: grid;
@@ -221,4 +240,18 @@ button {
 
 .price .price-container article button {
   margin: 1rem 3rem 3rem 3rem;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
 }
