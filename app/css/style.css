@@ -14,7 +14,7 @@ light color: #F6EBDD
 accent color: #c47a44   for links, hover...*/
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #3b2418;
@@ -25,7 +25,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Fraunces', Georgia, serif;
+  font-family: "Fraunces", Georgia, serif;
   font-weight: 500;
 }
 
@@ -55,6 +55,25 @@ ol {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 48px;
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 34px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+  margin-top: 16px;
 }
 
 section {
@@ -104,6 +123,7 @@ button {
 }
 
 .header-container {
+  margin: 0 auto;
   max-width: 1440px;
   display: flex;
   justify-content: space-between;
@@ -177,7 +197,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 196px;
+  gap: 50px;
 }
 
 .schritte p {
@@ -206,10 +226,6 @@ button {
 
 /* Preise */
 
-/* .price {
-  background-color: #e8b57b;
-} */
-
 .price .price-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -231,13 +247,13 @@ button {
 }
 
 .price .price-container article .cover.start {
-  background-image: url('../img/price/start.png');
+  background-image: url("../img/price/start.png");
 }
 .price .price-container article .cover.premium {
-  background-image: url('../img/price/premium.png');
+  background-image: url("../img/price/premium.png");
 }
 .price .price-container article .cover.business {
-  background-image: url('../img/price/business.png');
+  background-image: url("../img/price/business.png");
 }
 
 .price .price-container article h3 {
@@ -258,6 +274,56 @@ button {
 .price .price-container article button {
   margin: 1rem 3rem 3rem 3rem;
 }
+
+/* Formular */
+
+legend h3 {
+  margin-bottom: 0;
+}
+.paket {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.paket label {
+  display: inline-block;
+}
+
+.form .wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.wrapper > div {
+  flex: 1 1 200px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #d9c7b0;
+  border-radius: 6px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+  outline: none;
+  border: 2px solid #c47a44;
+  }
 
 /* Hero */
 .hero {
@@ -459,6 +525,10 @@ button {
   .price .price-container article button {
     margin: 0.5rem 1rem 1rem 1rem;
   }
+
+  form {
+    padding: 20px;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 768px) {
@@ -516,11 +586,6 @@ button {
   }
 }
 
-@media (max-width: 1332px) {
-  .schritte-liste {
-    gap: 50px;
-  }
-}
 
 @media (max-width: 768px) {
   .header-container {
@@ -592,11 +657,3 @@ button {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-}
-
-@media only screen and (min-width: 601px) and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 600px) {
-}

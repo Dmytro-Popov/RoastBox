@@ -319,6 +319,159 @@
           </div>
         </div>
       </section>
+
+      <section class="form section-dunkel">
+        <div class="container">
+          <h2 class="center">
+            Wähle dein Paket und wir liefern deine Kaffeebox direkt nach Hause
+          </h2>
+
+          <form class="formular" action="#">
+            <fieldset>
+              <legend><h3>Paket auswählen</h3></legend>
+
+              <div class="paket">
+                <div>
+                  <input
+                    type="radio"
+                    id="start"
+                    name="paket"
+                    value="start"
+                    checked
+                  />
+                  <label for="start">Start</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="premium"
+                    name="paket"
+                    value="premium"
+                  />
+                  <label for="premium">Premium</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="business"
+                    name="paket"
+                    value="business"
+                  />
+                  <label for="business">Business</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-daten">
+              <legend><h3>Deine Daten</h3></legend>
+              <div class="wrapper">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Viktoriia"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="viktoriia@beispiel.de"
+                  />
+                </div>
+                <div>
+                  <label for="phone">Telefon</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="+49 1234-567-890"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-daten">
+              <legend><h3>Lieferadresse</h3></legend>
+
+              <div class="wrapper">
+                <div>
+                  <label for="strasse">Straße und Hausnummer</label>
+                  <input
+                    type="text"
+                    id="strasse"
+                    name="strasse"
+                    placeholder="Musterstraße 1"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="plz">PLZ</label>
+                  <input
+                    type="text"
+                    id="plz"
+                    name="plz"
+                    placeholder="50679"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="stadt">Stadt</label>
+                  <input
+                    type="text"
+                    id="stadt"
+                    name="stadt"
+                    placeholder="Köln"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h3>Abo-Einstellungen</h3></legend>
+
+              <div class="wrapper">
+                <div>
+                  <label for="rhythmus">Lieferrhythmus</label>
+                  <select name="rhythmus" id="rhythmus">
+                    <option value="" disabled selected>Bitte wählen</option>
+                    <option value="wöchentlich">Wöchentlich</option>
+                    <option value="monatlich">Monatlich</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="dauer">Abonnementdauer</label>
+                  <select name="dauer" id="dauer">
+                    <option value="" disabled selected>Bitte wählen</option>
+                    <option value="3m">3 Monate</option>
+                    <option value="6m">6 Monate</option>
+                    <option value="12m">12 Monate</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h3>Zusätzliche Angaben <small>(optional)</small></h3>
+              </legend>
+              <label for="nachricht">Anmerkungen</label>
+              <textarea
+                id="nachricht"
+                name="nachricht"
+                placeholder="z. B. Wunsch nach mildem Kaffee, besondere Lieferhinweise..."
+              ></textarea>
+            </fieldset>
+            <button class="btn-sekundaer" type="submit">Jetzt bestellen</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
