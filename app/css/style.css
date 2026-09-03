@@ -9,7 +9,7 @@ light color: #F6EBDD
 accent color: #c47a44   for links, hover...*/
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #3b2418;
@@ -20,7 +20,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Fraunces", Georgia, serif;
+  font-family: 'Fraunces', Georgia, serif;
   font-weight: 500;
 }
 
@@ -99,8 +99,8 @@ button {
 }
 
 .header-container {
-  margin: 0 auto;
-  padding: 54px 20px;
+    margin: 0 auto;
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -227,13 +227,13 @@ button {
 }
 
 .price .price-container article .cover.start {
-  background-image: url("../img/price/start.png");
+  background-image: url('../img/price/start.png');
 }
 .price .price-container article .cover.premium {
-  background-image: url("../img/price/premium.png");
+  background-image: url('../img/price/premium.png');
 }
 .price .price-container article .cover.business {
-  background-image: url("../img/price/business.png");
+  background-image: url('../img/price/business.png');
 }
 
 .price .price-container article h3 {
