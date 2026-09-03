@@ -377,6 +377,89 @@ button {
   background-color: #fab525;
   color: #3b2418;
 }
+@media only screen and (max-width: 600px) {
+  .vorteile ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .price .price-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .price .price-container article h3 {
+    margin: 1rem 1rem 0.5rem 1rem;
+  }
+
+  .price .price-container article p {
+    margin: 0.5rem 1rem;
+  }
+
+  .price .price-container article p.geld {
+    margin: 0.5rem 1rem;
+  }
+
+  .price .price-container article button {
+    margin: 0.5rem 1rem 1rem 1rem;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .vorteile ul {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .price .price-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .price .price-container article h3 {
+    margin: 2rem 2rem 1rem 2rem;
+  }
+
+  .price .price-container article p {
+    margin: 1rem 2rem;
+  }
+
+  .price .price-container article p.geld {
+    margin: 1rem 2rem;
+  }
+
+  .price .price-container article button {
+    margin: 1rem 2rem 2rem 2rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .vorteile ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .price .price-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .vorteile ul {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .price .price-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+}
 
 @media (max-width: 1332px) {
   .schritte-liste {
