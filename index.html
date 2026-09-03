@@ -1,22 +1,513 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/app/css/style.css">
-</head>
-<body>
-    <header>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoastBox | Premium Kaffee, frisch geröstet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="./app/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="app/img/Logo_RoustBox.PNG" alt="Logo RoustBox" />
+        </div>
+        <div>
+          <nav class="nav">
+            <ul class="nav-list">
+              <li><a href="#top">Startseite</a></li>
+              <li><a href="#kaffee">Kaffee</a></li>
+              <li><a href="#ueber-uns">Über uns</a></li>
+              <li><a href="#funktion">So funktioniert's</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
+    <section class="hero" id="top">
+      <div class="background-img">
+        <img
+          src="app/img/Produce a coffee cup with hot beans.jpg"
+          alt="pexels-oguzcobn"
+        />
+      </div>
+      <div class="hero-content">
+        <h1>Direkt von der Rösterei</h1>
+        <h2>Kaffee, wie er sein sollte.</h2>
+        <p>
+          Frisch geröstet, sorgfältig verpackt und in wenigen Tagen bei dir zu
+          Hause.
+        </p>
+        <button
+          type="button"
+          class="btn"
+          onclick="document.querySelector('#kaffee').scrollIntoView()"
+        >
+          Kaffee entdecken
+        </button>
+      </div>
+      <div class="hero-content-card-2">
+        <div>
+          <h2>Deine erste RoastBox.</h2>
+          <p>RoastBox · Frisch für dich zusammengestellt.</p>
+          <p>
+            Wähle deine Röstung, wir liefern pünktlich. Jederzeit pausierbar.
+          </p>
+          <button
+            type="button"
+            class="btn"
+            onclick="document.querySelector('#roestung').scrollIntoView()"
+          >
+            Röstung wählen
+          </button>
+        </div>
+      </div>
+    </section>
 
     <main>
+      <section class="kunden section-hell">
+        <div class="container">
+          <p class="center">Vertraut von Kaffeeliebhabern</p>
 
+          <ul class="kunden-liste">
+            <li>
+              <img
+                src="./app/img/clients/daily-blend.jpeg"
+                alt="Logo von The Daily Blend mit Kaffeebohne, Buch und Wachstumspfeil unter einem Bogen"
+                width="138"
+                height="110"
+              />
+            </li>
+            <li>
+              <img
+                src="./app/img/clients/daily-brew-cafe.jpeg"
+                alt="Logo von Daily Brew Cafe mit einer dampfenden Kaffeetasse"
+                width="138"
+                height="110"
+              />
+            </li>
+            <li>
+              <img
+                src="./app/img/clients/daily-brew.jpeg"
+                alt="Logo von Daily Brew Cafe mit einer Kaffeebohne im Schlüsselloch"
+                width="138"
+                height="110"
+              />
+            </li>
+            <li>
+              <img
+                src="./app/img/clients/old-grind.jpeg"
+                alt="Logo von Old Grind Roasting House mit einer alten Handkaffeemühle"
+                width="138"
+                height="110"
+              />
+            </li>
+            <li>
+              <img
+                src="./app/img/clients/mornings-matter.jpeg"
+                alt="Logo von Mornings Matter mit Kaffeewagen vor aufgehender Sonne"
+                width="138"
+                height="110"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="video-bereich section-dunkel" id="ueber-uns">
+        <div class="container">
+          <h2 class="center">Erlebe deinen Kaffee:</h2>
+          <h3 class="center">So reft dein Kaffee</h3>
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/_Py8JOi3REg?si=NtHsrmCQEVfn-0ql"
+              title="YouTube video player"
+              frameborder="0"
+              allow="
+                accelerometer;
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                gyroscope;
+                picture-in-picture;
+                web-share;
+              "
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- <button class="btn-sekundaer" type="button">Jetzt entdecken</button> -->
+        </div>
+      </section>
+
+      <section class="schritte" id="funktion">
+        <div class="container">
+          <h2 class="center">So einfach geht's</h2>
+          <p class="center">In drei einfachen Schritten zu deinem Kaffee</p>
+          <ol class="schritte-liste">
+            <li>
+              <figure>
+                <img src="./app/img/schritte/list-checks-fill.png" alt="" />
+                <h4>Wähle deine Box</h4>
+                <figcaption>
+                  Beantworte ein paar kurze Fragen zu deinem Geschmack — wir
+                  stellen dir die passende Box zusammen
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./app/img/schritte/coffee-bean-fill.png" alt="" />
+                <h4>Wir rösten für dich</h4>
+                <figcaption>
+                  Frisch geröstet in kleinen Mengen, extra für deine Bestellung
+                  — kein Kaffee aus dem Lager
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="./app/img/schritte/calendar-heart-fill.png" alt="" />
+                <h4>Nie wieder ohne Kaffee</h4>
+                <figcaption>
+                  Deine Box kommt automatisch und regelmäßig — du musst an
+                  nichts denken, dein Lieblingskaffee ist immer da
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="vorteile section-hell" id="roestung">
+        <div class="container">
+          <h2 class="center">Dein Kaffee. Deine Wahl.</h2>
+
+          <ul>
+            <li>
+              <img
+                src="./app/img/kaffeesorten/drop-half-fill.svg"
+                alt=""
+                width="138"
+                height="110"
+              />
+              <div>
+                <h3>Mild</h3>
+                <p>Sanft und ausgewogen.</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./app/img/kaffeesorten/drop-fill.svg"
+                alt=""
+                width="138"
+                height="110"
+              />
+              <div>
+                <h3>Kräftig</h3>
+                <p>Intensiv und vollmundig.</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./app/img/kaffeesorten/orange-fill.svg"
+                alt=""
+                width="138"
+                height="110"
+              />
+              <div>
+                <h3>Fruchtig</h3>
+                <p>Frische und fruchtige Noten.</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./app/img/kaffeesorten/acorn-fill.svg"
+                alt=""
+                width="138"
+                height="110"
+              />
+              <div>
+                <h3>Nussig</h3>
+                <p>Warme und geröstete Nussnoten.</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./app/img/kaffeesorten/coffee-fill.svg"
+                alt=""
+                width="138"
+                height="110"
+              />
+              <div>
+                <h3>Espresso</h3>
+                <p>Perfekt für deine Siebträgermaschine.</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="./app/img/kaffeesorten/funnel-fill.svg"
+                alt=""
+                width="138"
+                height="110"
+              />
+              <div>
+                <h3>Filterkaffee</h3>
+                <p>Ideal für einen klaren und aromatischen Geschmack.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="price" id="kaffee">
+        <div class="container">
+          <h2 class="center">Finde deine RoastBox.</h2>
+          <div class="price-container">
+            <article>
+              <div class="cover start"></div>
+              <h3>Classic</h3>
+              <p>RoastBox Classic<br />Ausgewogen · Schokolade · Karamell</p>
+              <p class="h3 geld">89 €</p>
+              <button
+                type="button"
+                class="btn"
+                onclick="document.querySelector('#kontakt').scrollIntoView()"
+              >
+                Jetzt bestellen
+              </button>
+            </article>
+            <article>
+              <div class="cover premium"></div>
+              <h3>Premium</h3>
+              <p>RoastBox Premium<br />Fruchtig · Floral · Komplex</p>
+              <p class="h3 geld">149 €</p>
+              <button
+                type="button"
+                class="btn"
+                onclick="document.querySelector('#kontakt').scrollIntoView()"
+              >
+                Jetzt bestellen
+              </button>
+            </article>
+            <article>
+              <div class="cover business"></div>
+              <h3>Business</h3>
+              <p>RoastBox Dark<br />Kräftig · Kakao · Nussig</p>
+              <p class="h3 geld">489 €</p>
+              <button
+                type="button"
+                class="btn"
+                onclick="document.querySelector('#kontakt').scrollIntoView()"
+              >
+                Jetzt bestellen
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="form section-dunkel" id="kontakt">
+        <div class="container">
+          <h2 class="center">
+            Wähle dein Paket und wir liefern deine Kaffeebox direkt nach Hause
+          </h2>
+
+          <form class="formular" action="#">
+            <fieldset>
+              <legend><h3>Paket auswählen</h3></legend>
+
+              <div class="paket">
+                <div>
+                  <input
+                    type="radio"
+                    id="start"
+                    name="paket"
+                    value="start"
+                    checked
+                  />
+                  <label for="start">Start</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="premium"
+                    name="paket"
+                    value="premium"
+                  />
+                  <label for="premium">Premium</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    id="business"
+                    name="paket"
+                    value="business"
+                  />
+                  <label for="business">Business</label>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-daten">
+              <legend><h3>Deine Daten</h3></legend>
+              <div class="wrapper">
+                <div>
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Viktoriia"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">E-mail</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="viktoriia@beispiel.de"
+                  />
+                </div>
+                <div>
+                  <label for="phone">Telefon</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="+49 1234-567-890"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="form-daten">
+              <legend><h3>Lieferadresse</h3></legend>
+
+              <div class="wrapper">
+                <div>
+                  <label for="strasse">Straße und Hausnummer</label>
+                  <input
+                    type="text"
+                    id="strasse"
+                    name="strasse"
+                    placeholder="Musterstraße 1"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="plz">PLZ</label>
+                  <input
+                    type="text"
+                    id="plz"
+                    name="plz"
+                    placeholder="50679"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="stadt">Stadt</label>
+                  <input
+                    type="text"
+                    id="stadt"
+                    name="stadt"
+                    placeholder="Köln"
+                    required
+                  />
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend><h3>Abo-Einstellungen</h3></legend>
+
+              <div class="wrapper">
+                <div>
+                  <label for="rhythmus">Lieferrhythmus</label>
+                  <select name="rhythmus" id="rhythmus">
+                    <option value="" disabled selected>Bitte wählen</option>
+                    <option value="wöchentlich">Wöchentlich</option>
+                    <option value="monatlich">Monatlich</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="dauer">Abonnementdauer</label>
+                  <select name="dauer" id="dauer">
+                    <option value="" disabled selected>Bitte wählen</option>
+                    <option value="3m">3 Monate</option>
+                    <option value="6m">6 Monate</option>
+                    <option value="12m">12 Monate</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>
+                <h3>Zusätzliche Angaben <small>(optional)</small></h3>
+              </legend>
+              <label for="nachricht">Anmerkungen</label>
+              <textarea
+                id="nachricht"
+                name="nachricht"
+                placeholder="z. B. Wunsch nach mildem Kaffee, besondere Lieferhinweise..."
+              ></textarea>
+            </fieldset>
+            <button class="btn-sekundaer" type="submit">Jetzt bestellen</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer>
-        
+      <div class="footer">
+        <div class="footer-logo">
+          <img src="app/img/Logo_RoustBox.PNG" alt="" />
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#top">Startseite</a></li>
+            <li><a href="#kaffee">Kaffee</a></li>
+            <li><a href="#ueber-uns">Über uns</a></li>
+            <li><a href="#funktion">So funktioniert's</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <img
+              src="app/img/logo icons/facebook-logo-fill.svg"
+              alt="Facebook"
+            />
+          </a>
+          <a href="#" aria-label="Instagram">
+            <img
+              src="app/img/logo icons/instagram-logo-fill.svg"
+              alt="Instagram"
+            />
+          </a>
+          <a href="#" aria-label="YouTube">
+            <img src="app/img/logo icons/youtube-logo-fill.svg" alt="YouTube" />
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <img
+              src="app/img/logo icons/linkedin-logo-fill.svg"
+              alt="LinkedIn"
+            />
+          </a>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
