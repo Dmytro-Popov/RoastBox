@@ -365,32 +365,34 @@ textarea:hover {
   margin: 0;
   max-width: 600px;
   color: #000000;
-  text-align: center;
-  background-color: rgba(250, 181, 37, 0.25);
+  background: rgba(59, 36, 24, 0.55);
   padding: 30px;
   color: #ffffff;
 }
 
 .hero-content h1 {
+  text-align: left;
   font-size: 48px;
   margin-top: 50px;
   margin-bottom: 50px;
-  color: #3b2418;
 }
 
 .hero-content h2 {
+  text-align: left;
   font-size: 24px;
-  margin-bottom: 50px;
+
   margin-top: 20px;
   font-weight: 400;
 }
 
 .hero-content p {
+  text-align: left;
   margin-bottom: 80px;
   line-height: 1.5;
 }
 
 .hero-content button {
+  align-self: flex-start;
   padding: 10px 20px;
   margin: 0 10px;
   cursor: pointer;
@@ -411,12 +413,11 @@ textarea:hover {
   max-width: 100%;
   min-height: 340px;
   border-radius: 28px;
-  background: var(--paper);
   padding: 2rem 1.5rem 1.75rem;
   z-index: 2;
   display: flex;
   align-items: flex-end;
-  background-color: rgba(250, 181, 37, 0.25);
+  background: rgba(196, 122, 68, 0.70);
   color: #ffffff;
   padding: 30px;
   text-align: center;
@@ -428,8 +429,8 @@ textarea:hover {
 }
 
 .hero-content-card-2 h2 {
+  margin-top: 90px;
   text-align: center;
-  color: #3b2418;
 }
 
 .hero-content-card-2 p {
@@ -610,8 +611,8 @@ textarea:hover {
 
   .hero {
     position: relative;
-    min-height: auto;
-    padding: 2rem 1.25rem;
+    min-height: 850px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -630,12 +631,11 @@ textarea:hover {
     position: relative;
     z-index: 2;
     max-width: 100%;
-    padding: 1.5rem;
-    text-align: center;
+    padding: 20px;
   }
 
   .hero-content h1 {
-    font-size: 1.4rem;
+    margin: 0;
   }
 
   .hero-content h2 {
@@ -643,21 +643,38 @@ textarea:hover {
   }
 
   .hero-content p {
+    margin: 0;
     font-size: 0.95rem;
   }
 
   .hero-content button {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 30px;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
   }
 
   .hero-content-card-2 {
     position: relative;
     z-index: 2;
-    width: 100%;
+    width: fit-content;
     min-height: auto;
     margin: 0 auto;
     align-items: flex-start;
+    padding: 20px;
+  }
+
+  .hero-content-card-2 button {
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .hero-content-card-2 h2 {
+    margin: 30px;
   }
 
   .footer-social {
